@@ -1,0 +1,25 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies / build
+node_modules
+dist
+.next
+out
+*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# Local PGlite
+.data
+
+# Env
+.env
+.env.*
+!.env.example
