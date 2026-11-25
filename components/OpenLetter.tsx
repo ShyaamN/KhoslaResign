@@ -1,4 +1,4 @@
-import { LETTER_SECTIONS } from '../data/content'
+import { LETTER_SECTIONS } from '@/data/content'
 
 export function OpenLetter() {
   return (
@@ -25,11 +25,10 @@ export function OpenLetter() {
       <div className="letter__body">
         <p className="letter__salute">To the members of the UC Board of Regents,</p>
         <p className="letter__lede">
-          We are current and former UC San Diego students, faculty, staff, alumni, and
-          community supporters. We write with a clear demand: that Chancellor Pradeep K.
-          Khosla resign or be removed, that the May 6, 2024 police action face independent
-          review, and that this campus recommit to student welfare over force-first
-          governance and expansion-first optics.
+          We are current UC San Diego students and faculty/staff. We write with a clear
+          demand: that Chancellor Pradeep K. Khosla resign or be removed, that the May 6,
+          2024 police action face independent review, and that this campus recommit to
+          student welfare over force-first governance and expansion-first optics.
         </p>
 
         {LETTER_SECTIONS.map((s) => (
@@ -45,8 +44,8 @@ export function OpenLetter() {
         ))}
 
         <p className="letter__close">
-          Signed by the students, alumni, faculty, staff, and community members listed on
-          this page — each speaking for themselves.
+          Signed by the UCSD students and faculty/staff listed on this page — each speaking
+          for themselves, after confirming an @ucsd.edu address.
         </p>
       </div>
     </section>

@@ -1,5 +1,7 @@
+'use client'
+
 import { useState } from 'react'
-import { REASON_GROUPS } from '../data/content'
+import { REASON_GROUPS } from '@/data/content'
 
 export function Reasons() {
   const [openId, setOpenId] = useState<string | null>(REASON_GROUPS[0]?.id ?? null)

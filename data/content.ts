@@ -1,4 +1,4 @@
-export type Role = 'student' | 'alumni' | 'faculty' | 'community'
+export type Role = 'student' | 'staff'
 
 export type Signature = {
   id: string
@@ -19,9 +19,7 @@ export type ReasonGroup = {
 
 export const ROLE_LABELS: Record<Role, string> = {
   student: 'Current student',
-  alumni: 'Alumni',
-  faculty: 'Faculty / staff',
-  community: 'Community',
+  staff: 'Faculty / staff',
 }
 
 export const LETTER_SECTIONS = [
@@ -59,7 +57,7 @@ Compensation controversies have tracked the same tenure: a 2023 retention raise 
     title: 'A public answer',
     body: `Fourteen years of growth and fundraising do not place anyone above accountability to the students, workers, and faculty who make this campus possible. Shared governance means listening before force. Student welfare means housing and food security before skyline ambition. Labor peace means contracts kept in good faith.
 
-We are current students, alumni, faculty, staff, and community members. We write for ourselves. We demand that the Regents remove Chancellor Khosla — or that he resign — and that UC San Diego rebuild the trust this administration destroyed.`,
+We are current UC San Diego students and faculty/staff. We write for ourselves. We demand that the Regents remove Chancellor Khosla — or that he resign — and that UC San Diego rebuild the trust this administration destroyed.`,
   },
 ] as const
 
@@ -166,7 +164,7 @@ export const REASON_GROUPS: ReasonGroup[] = [
   },
 ]
 
-/** Small seeded demo set — clearly marked. Real user signatures append via localStorage. */
+/** Small seeded demo set — clearly marked. Confirmed signatures come from the API. */
 export const DEMO_SIGNATURES: Signature[] = [
   {
     id: 'demo-1',
@@ -179,33 +177,15 @@ export const DEMO_SIGNATURES: Signature[] = [
   },
   {
     id: 'demo-2',
-    name: 'Jordan Lee',
-    role: 'alumni',
-    affiliation: 'Class of 2018',
-    message: 'I am ashamed of how my alma mater treated its own students.',
-    createdAt: '2024-05-12T14:30:00.000Z',
-    demo: true,
-  },
-  {
-    id: 'demo-3',
     name: 'Dr. M. Chen',
-    role: 'faculty',
+    role: 'staff',
     affiliation: 'Academic Senate member (signing personally)',
     message: 'Shared governance means nothing if force replaces dialogue.',
     createdAt: '2024-05-15T09:15:00.000Z',
     demo: true,
   },
   {
-    id: 'demo-4',
-    name: 'Sam Okonkwo',
-    role: 'community',
-    affiliation: 'San Diego resident',
-    message: 'Public universities answer to the public.',
-    createdAt: '2024-05-18T21:00:00.000Z',
-    demo: true,
-  },
-  {
-    id: 'demo-5',
+    id: 'demo-3',
     name: 'Priya N.',
     role: 'student',
     affiliation: 'Graduate student',

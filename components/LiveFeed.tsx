@@ -1,4 +1,6 @@
-import { ROLE_LABELS, type Signature } from '../data/content'
+'use client'
+
+import { ROLE_LABELS, type Signature } from '@/data/content'
 
 function formatWhen(iso: string) {
   try {
@@ -28,7 +30,7 @@ export function LiveFeed({
         <p className="eyebrow">Live signatures</p>
         <h2 id="feed-heading">People adding their names</h2>
         <p className="section-support">
-          Newest first. Demo entries are marked; your signature stays in this browser.
+          Confirmed UCSD students and faculty/staff only. Demo entries are marked.
         </p>
       </div>
       <ul className="feed__list">
